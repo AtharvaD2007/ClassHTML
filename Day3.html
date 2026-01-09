@@ -2,12 +2,114 @@
     <head>
         <meta>
         <title>HTML Practice Page</title>
+        <style>
+            body{
+                background-color: darkseagreen;
+            }
+            h1{
+                text-align: center;
+                font-size: x-large;
+                text-shadow: 2px 2px grey;
+            }
+            h1:hover{
+                color: blue;
+            }
+            h3{
+                color: palevioletred;
+                letter-spacing: 2px;
+                opacity: 0.8;
+                
+            }
+            .htmlinfo{
+                border-style: solid;
+                border-radius: 0.5cm black;
+                padding: 10px;
+                line-height: 30px;
+            }
+            .sec{
+                border: thick;
+                background-color: aqua;
+                transform: rotate(1deg);
+            }
+            hr{
+                max-width: 50%;
+        
+                line-height: 1px;
+                color: violet;
+            }
+            pre{
+                background-color: black;
+                color: yellow;
+                font-family: monospace;
+            }
+
+            ul{
+                list-style: none;
+                background-color: lightgrey;
+                letter-spacing: 0vw.5;
+
+            }
+            ol{
+                list-style-type: upper-roman;
+                background-color: lightyellow;
+                letter-spacing: 0.1vw;
+                font-weight: bold;
+                padding: 5px 5px 5px 5px;
+            }
+            a{
+                text-decoration: none;
+                color :cadetblue;
+            }
+
+            a:hover{
+                text-decoration: underline;
+            }
+            div{
+                border-style: solid;
+                border: thin  black;
+                text-shadow: 1px 1px grey;
+                border-radius: 10deg;
+            }
+            span{
+                color: pink ;
+                font-size: large;
+                font-weight: bold;
+            }
+            button {
+                padding :10px;
+                border-radius: round;
+                cursor: pointer;
+
+
+            }
+            button:hover{
+                background-color: lightgreen;
+                box-shadow: 2px 2px 5px grey;
+                transform: scale(1);
+            }
+            footer{
+                font-size: small;
+                color:blueviolet;
+                text-align: center;
+            }
+            *{
+                letter-spacing: 1px;
+                margin: 5px 5px 5px 5px;
+                padding: 5px 5px 5px 5px;
+                max-width: 98%;
+            }
+
+
+
+
+        </style>
     </head>
     <body>
         <h1 id = "Main Heading">Assignment</h1>
-        <h3 style="color: crimson;">Subheading</h3>
-        <p class="htmlinfo"><b>HTML</b> is used to design <i>the basic struture of a web page or website.<br><hr style="color: red;"></i> It is a markup language and uses tags. <br><hr style="color: red;">Basice html stucture includes : <strong>html,head,title and body tags</strong><br><hr style="color: red;"></p>
-        <pre style="color: darkslategray;">
+        <h3 >Subheading</h3>
+        <p class="htmlinfo"><b>HTML</b> is used to design <i>the basic struture of a web page or website.<br><hr ></i></p>
+        <p class ="sec"> It is a markup language and uses tags. <br><hr >Basice html stucture includes : <strong>html,head,title and body tags</strong><br><hr ></p>
+        <pre >
         My name is Atharva Dalvi.
         I am learning HTML.
         I am enjoying it very much.
@@ -24,12 +126,12 @@
             <li>Tata</li>
             <li>Alvida</li>
         </ol>
-        <a href ="Https://www.google.com" class="anchor" style="text-decoration: none">This is a link to Google</a>
+        <a href ="Https://www.google.com" class="anchor" >This is a link to Google</a>
         <div class="Div">
-           <p>Hi i am <span style="font-weight: bold;"> Atharva Dalvi</span>.</p>
+           <p>Hi i am <span > Atharva Dalvi</span>.</p>
         </div>
-        <button id="submit" style="background-color: aqua;">Submit</button>
-        <footer class="end" style="font-size: small;">
+        <button id="submit" >Submit</button>
+        <footer class="end" >
             Thanks for visiting my page!
         </footer>
 
