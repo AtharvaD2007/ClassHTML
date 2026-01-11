@@ -1,0 +1,264 @@
+<html>
+<head>
+    <title>CSS Box Model – Complete Practice Lab</title>
+
+    <style>
+        /* =====================================================
+           GLOBAL STYLES (DO NOT EDIT)
+           ===================================================== */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .section {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+        }
+
+        /* =====================================================
+           COMMON BOX STYLE
+           ===================================================== */
+        .box {
+            width: 300px;
+            background-color: #e6e6e6;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+        .boxtask1 {
+            padding: 15px 100px 15px 15px;
+            border: 2px solid #201e1e;
+            margin-right: 800px;
+            margin-bottom: 20px;
+            background-color: rgb(216, 207, 207);
+        }
+        .boxtask2{
+            padding : 10px 55px 10px 35px;
+            border : dashed 4px blue;
+            background-color: rgb(216, 207, 207);
+            margin-left: 50px;
+            margin-right: 700px;
+            margin-bottom: 20px;
+        }
+        .boxtask3{
+            padding: 0px 50px 0px 30px;
+            border : solid 3px red;
+            margin-bottom: 20px;
+            background-color: rgb(216, 207, 207);
+            margin-right: 800px ;
+
+
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+        .boxtask4{
+            padding: 20px 20px 20px 20px;
+            border : solid 2px black;
+            margin-right: 800px;
+            margin-bottom: 20px;
+            margin-left: 50px;
+            background-color: rgb(216, 207, 207);
+            font-size: medium;
+        }
+        .boxtask5{
+            width: 300px;
+            border : solid 4px rgb(121, 31, 100);
+            background-color: rgb(216, 207, 207);
+            padding : 30px 30px 30px 30px;
+            
+        }
+        .boxtask6{
+            padding: 30px 30px 30px 30px;
+            border: solid 2px black ;
+            margin-right: 800px;
+            margin-bottom: 20px;
+            background-color: rgb(216, 207, 207);
+        }
+        h2 + .boxtask7{
+            padding: 20px 20px 20px 20px;
+            border : solid 2px black;
+            margin-bottom: 20px;
+            margin-right: 800px;
+            background-color: rgb(216, 207, 207);
+        }
+        div + .boxtask7{
+            padding: 20px 20px 20px 20px;
+            border : solid 2px black;
+            margin-right: 800px;
+            margin-bottom: 20px;
+            background-color: rgb(216, 207, 207);
+        }
+        .boxtask8{
+            padding: 20px 20px 20px 20px;
+            border : solid 2px black;
+            margin-right: 850px;
+            margin-bottom: 20px;
+            background-color: rgb(216, 207, 207);
+        }
+
+        .boxtask9{
+            width: 300px;
+            padding: 30px 30px 30px 30px;
+            border : solid 4px green;
+            background-color: rgb(216, 207, 207);
+        }
+        .boxtask10{
+            padding: 20px 20px 20px 20px;
+            border : solid 3px black;
+            margin-right: 800px;
+            margin-bottom: 20px;
+            background-color: rgb(216, 207, 207);
+        }
+        .boxtask11{
+            padding: 10px 40px 10px 40px;
+            border : solid 3px orange;
+            margin-right: 850px;
+            margin-bottom: 20px;
+            background-color: rgb(216, 207, 207);
+        }
+        .boxtask12{
+            padding: 20px 20px 20px 20px;
+            border : solid 3px black;
+            margin-right: 850px;
+            margin-bottom: 20px;
+            background-color: rgb(216, 207, 207);
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+
+<h1>CSS Box Model - Complete Practice Lab</h1>
+<p style="text-align:center;">
+    Complete all tasks using <strong>padding, border, margin, and box-sizing</strong>.
+    Use DevTools to inspect the box model.
+</p>
+
+<!-- TASK 1 -->
+<div class="section">
+    <h2>Task 1: Basic Box Model</h2>
+    <div class="boxtask1">
+        Simple text content
+    </div>
+</div>
+
+<!-- TASK 2 -->
+<div class="section">
+    <h2>Task 2: Different Sides</h2>
+    <div class="boxtask2">
+        Left & right spacing should be larger
+    </div>
+</div>
+
+<!-- TASK 3 -->
+<div class="section">
+    <h2>Task 3: Vertical Spacing</h2>
+    <div class="boxtask3">
+        Control vertical spacing
+    </div>
+</div>
+
+<!-- TASK 4 -->
+<div class="section">
+    <h2>Task 4: Image Padding</h2>
+    <div class="boxtask4">
+        
+        <img src="https://store-images.s-microsoft.com/image/apps.6245.13971189634504674.472023ad-3e0b-4229-82e4-f1e653ef2faf.bd77f319-9cc6-41ac-8a66-8c8492af562a" alt="Image no available">
+        <p>Text should not touch border</p>
+    </div>
+</div>
+
+<!-- TASK 5 -->
+<div class="section">
+    <h2>Task 5: Box Sizing</h2>
+    <div class="boxtask5">
+        Keep total width 300px
+    </div>
+</div>
+
+<!-- TASK 6 -->
+<div class="section">
+    <h2>Task 6: Image Touching Border</h2>
+    <div class="boxtask6">
+        
+        <img src="https://store-images.s-microsoft.com/image/apps.6245.13971189634504674.472023ad-3e0b-4229-82e4-f1e653ef2faf.bd77f319-9cc6-41ac-8a66-8c8492af562a" alt="Image no available">
+        <p>Fix spacing using padding</p>
+    </div>
+</div>
+
+<!-- TASK 7 -->
+<div class="section">
+    <h2>Task 7: Separate Cards</h2>
+    <div class="boxtask7">Card One</div>
+    <div class="boxtask7">Card Two</div>
+</div>
+
+<!-- TASK 8 -->
+<div class="section">
+    <h2>Task 8: Padding or Margin?</h2>
+    <div class="boxtask8">
+        Text should not touch border
+    </div>
+</div>
+
+<!-- TASK 9 -->
+<div class="section">
+    <h2>Task 9: Fix Width</h2>
+    <div class="boxtask9">
+        Width must stay 300px
+    </div>
+</div>
+
+<!-- TASK 10 -->
+<div class="section">
+    <h2>Task 10: Image Card</h2>
+    <div class="boxtask10">
+       
+        <h3>Card Title</h3>
+        <img src="https://store-images.s-microsoft.com/image/apps.6245.13971189634504674.472023ad-3e0b-4229-82e4-f1e653ef2faf.bd77f319-9cc6-41ac-8a66-8c8492af562a" alt="Image no available">
+        <p>Spacing must look clean</p>
+    </div>
+</div>
+
+<!-- TASK 11 -->
+<div class="section">
+    <h2>Task 11: Horizontal Padding</h2>
+    <div class="boxtask11">
+        Left & right spacing only
+    </div>
+</div>
+
+<!-- TASK 12 -->
+<div class="section">
+    <h2>Task 12: Product Card (Final)</h2>
+    <div class="boxtask12">
+        
+        <img src="https://store-images.s-microsoft.com/image/apps.6245.13971189634504674.472023ad-3e0b-4229-82e4-f1e653ef2faf.bd77f319-9cc6-41ac-8a66-8c8492af562a" alt="Product Image">
+        <h3>Product Name</h3>
+        <p>Description goes here</p>
+        <p><strong>$99</strong></p>
+    </div>
+</div>
+
+</body>
+</html>
