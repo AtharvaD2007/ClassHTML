@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #1e90ff;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #fff;
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #e6e6e6;
+}
+
+/* Sections */
+section {
+    padding: 50px 15%;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: #1e90ff;
+    margin-bottom: 15px;
+}
+
+/* Course List */
+.courses ul {
+    margin-top: 15px;
+}
+
+.courses li {
+    margin-bottom: 8px;
+}
+
+/* Call to Action */
+.cta {
+    text-align: center;
+    background-color: #eef5ff;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
