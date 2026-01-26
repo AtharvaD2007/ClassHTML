@@ -1,81 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nature Gallery</title>
-    <link rel="stylesheet" href="styleN.css">
-</head>
-<body>
-    <header class="header">
-        <H1>Fun Nature Gallery</H1>
-        <p>Explore beautiful free nature photos while learning CSS Grid!</p>
-    </header>
-    <nav class="navbar">
-        <a href="home">Home</a>
-        <a href="Landscapes">Landscapes</a>
-        <a href="Forests">Forests</a>
-        <a href="Mountains">Mountains</a>
-        <a href="Water">Water</a>
-    </nav>
-    <main>
-        <div class="container">
-            <div class="content">
-                <img src="https://miro.medium.com/v2/resize:fit:1400/0*6lQ6FxwIWeJWhti6.jpg" alt="Photo unavailable">
-                <p>Forest Path</p>
-            </div>
-            <div class="content">
-                <img src="https://lostinswitzerland.com/wp-content/uploads/2025/09/Oeschinensee.jpg" alt="Photo unavailable">
-                <p>Mountain Landscape</p>
-            </div>
-            <div class="content">
-                <img src="https://img.freepik.com/free-photo/beautiful-view-road-sunrise-early-morning_181624-51728.jpg?semt=ais_hybrid&w=740&q=80" alt="Photo unavailable">
-                <p>Sunset Road</p>
-            </div>
-            <div class="content">
-                <img src="https://media.istockphoto.com/id/470608145/photo/erawan-waterfall.jpg?s=612x612&w=0&k=20&c=yiXeQzoHwKr-9fVk9Ab1UZ2PCt6KpMyFI7M0RBKcB0M=" alt="Photo unavailable">
-                <p>Waterfall View</p>
-            </div>
-            <div class="content">
-                <img src="https://img.freepik.com/free-photo/scenery-sun-shining-green-forest-full-high-rise-trees-other-plants_181624-11833.jpg?semt=ais_hybrid&w=740&q=80" alt="Photo unavailable">
-                <p>Green Forest</p>
-            </div>
-            <div class="content">
-                <img src="https://img.freepik.com/free-photo/sunset-time-tropical-beach-sea-with-coconut-palm-tree_74190-1075.jpg" alt="Photo unavailable">
-                <p>Sunset Beach</p>
-            </div>
-        </div>
-    </main>
-    <div class="sidebar">
-        <h3>Filter Narure</h3>
-        <p>Try selecting : </p>
-        <ul>
-            <li><input type="checkbox" id="forest">
-            <label for="forest">Forest</label></li>
-            <li><input type="checkbox" id="mountain">
-            <label for="mountain">Mountains</label></li>
-            <li><input type="checkbox" id="water">
-            <label for="water">Water</label></li>
-        </ul>
-        
-        <h3>Why this is perfect for Grid class:</h3>
-        <ul>
-            <li><b>main</b> is already a 2-column grid (sidebar + gallery).</li>
-            <li><b>.gallery</b> is a responsive grid of cards, perfect for practicing:</li>
-            <ul>
-                <li>grid-template-columns</li>
-                <li>grid-gap / gap</li>
-                <li>justify-items / align-items</li>
-            </ul>
-            <li>Hover effects make it interactive and fun.</li>
-            <li>Students can add their favorite nature images and experiment.</li>
-            <li>Sidebar filters give a “real gallery feel”.</li>
-        </ul>
+    <title>Coffee Shop</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
 
-    </div>
-    
-    <footer class="footer">
-        <p>© 2026 Nature Gallery — CSS Grid Practice!</p>
-    </footer>
+        h1 {
+            text-align: center;
+            background-color: brown;
+            color: white;
+            padding: 20px;
+        }
+
+        .box {
+            background-color: white;
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 8px;
+            background-color: brown;
+            color: white;
+            border: none;
+        }
+
+        #result {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Coffee Shop ☕</h1>
+
+<div class="box">
+    <h3>Select Coffee</h3>
+
+    <input type="radio" name="coffee" value="Espresso"> Espresso – ₹120 <br><br>
+    <input type="radio" name="coffee" value="Cappuccino"> Cappuccino – ₹180 <br><br>
+    <input type="radio" name="coffee" value="Latte"> Latte – ₹200 <br><br>
+
+    <button onclick="order()">Order</button>
+
+    <p id="result"></p>
+</div>
+
+<script>
+function order() {
+    var coffee = document.getElementsByName("coffee");
+    var price = 0;
+    var name = " ";
+
+    if (coffee[0].checked) {
+        name = "Espresso";
+        price = 120;
+    }
+    else if (coffee[1].checked) {
+        name = "Cappuccino";
+        price = 180;
+    }
+    else if (coffee[2].checked) {
+        name = "Latte";
+        price = 200;
+    }
+    else {
+        document.getElementById("result").innerHTML =
+        "Please select a coffee";
+        return;
+    }
+
+    document.getElementById("result").innerHTML =
+    "You ordered " + name + "<br>Total cost: ₹" + price;
+}
+</script>
+
 </body>
 </html>
