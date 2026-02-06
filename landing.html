@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        
+:root{
+    --primary-color: #5a4bff;
+    --secondary-color: #ff6b6b;
+    --bg-color: #f4f6ff;
+    --text-color: #222;
+    --border-radius: 10px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 32px;
+    --font-base: 16px;
+    --font-heading: 40px;
+    --font-family: "Times New Roman", Times, serif;
+}
+body{
+    margin: 0;
+    font-family: var(--font-family);
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-size: var(--font-base);
+}
+body.dark{
+    --bg-color:#121212;
+    --text-color:#ffffff;
+    --card-color:#1e1e1e;
+}
+.big-font{
+    --font-base: 20px;
+    --font-heading: 48px;
+}
+body.new{
+    --font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-md) var(--space-lg);
+}
+
+
+.hero{
+    text-align: center;
+    padding: var(--space-lg);
+}
+
+.hero h1{
+    font-size: var(--font-heading);
+}
+
+.hero p{
+    margin: var(--space-md) 0;
+}
+
+.cards{
+    display: flex;
+    gap: var(--space-lg);
+    padding: var(--space-lg);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: rgb(202, 199, 199);
+    padding: var(--space-lg);
+    border-radius: var(--border-radius);
+    width: 260px;
+    text-align: center;
+}
+
+
+.btn{
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: var(--font-base);
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+.footer{
+    text-align: center;
+    padding: var(--space-md);
+    margin-top: var(--space-lg);
+}
+
+
+    </style>
+</head>
+<body>
+
+    
+    <nav class="navbar">
+        <h2>BrandLogo</h2>
+        <button class="btn">Sign Up</button>
+    </nav>
+
+   
+    <section class="hero">
+        <h1>Build Websites Faster</h1>
+        <p>Using CSS variables makes styling scalable and maintainable.</p>
+        <button class="btn">Get Started</button>
+    </section>
+
+    
+    <section class="cards">
+        <div class="card">
+            <h3>Font Change</h3>
+            <p>Reuse styles easily using variables.</p>
+            <button class="btn" onclick="toggleFontSize()">Font-Size</button>
+
+        </div>
+
+        <div class="card">
+            <h3>Theme Change</h3>
+            <p>You may change the theme .</p>
+            <button class="btn" onclick="theme()">Dark/light</button>
+        </div>
+
+        <div class="card">
+            <h3>Font Family</h3>
+            <p>Centralized design tokens.</p>
+            <button class="btn" onclick="happy()">Learn More</button>
+        </div>
+    </section>
+
+  
+    <footer class="footer">
+        <p>© 2026 Your Company</p>
+    </footer>
+    <script>
+        function theme(){
+            document.body.classList.toggle("dark")
+        }
+        
+        function toggleFontSize(){
+            document.body.classList.toggle("big-font");
+        }
+        function happy(){
+            document.body.classList.toggle("new")
+        }
+    </script>
+
+</body>
+</html>
