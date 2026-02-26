@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="styleme.css">
+</head>
+
+<body>
+
+    <nav>
+        <h1>Bootstrap</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <button id="search-btn">🔍</button>
+        </ul>
+    </nav>
+    <div class="search" id="search">
+        <h1 id="close-btn" class="close-btn">X</h1>
+        <form>
+            <input class="search-bar" placeholder=" What are you looking for ? " />
+        </form>
+    </div>
+    <div class="carousel">
+        <div class="slides">
+
+            <div class="slide">
+                <img
+                    src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8=">
+                <div class="content">
+                    <h1>Welcome to Nature</h1>
+                    <p>Experience the beauty of mountains</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="https://picsum.photos/id/1016/1600/800">
+                <div class="content">
+                    <h1>Adventure Awaits</h1>
+                    <p>Discover new places with us</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="https://picsum.photos/id/1018/1600/800">
+                <div class="content">
+                    <h1>Feel the Freedom</h1>
+                    <p>Travel beyond limits</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="indicators">
+            <span class="dash active"></span>
+            <span class="dash"></span>
+            <span class="dash"></span>
+        </div>
+
+    </div>
+    <div class="pricing-table">
+        <h1>Pricing</h1>
+        <p>Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built
+            with default Bootstrap components and utilities with little customization.</p>
+        <div class="cards">
+            <div class="card">
+                <h3>Free</h3>
+                <h2>$0</h2>
+                <ul>
+                    <li>10 users included</li>
+                    <li>2 GB of storage</li>
+                    <li>Email support</li>
+                    <li>Help center access</li>
+                </ul>
+                <button>Sign up for free</button>
+
+            </div>
+            <div class="card">
+                <h3>Pro</h3>
+                <h2>$15</h2>
+                <ul>
+                    <li>20 users included</li>
+                    <li>10 GB of storage</li>
+                    <li>Priority email support</li>
+                    <li>Help center access</li>
+                </ul>
+                <button>Get started</button>
+
+            </div>
+            <div class="card">
+                <h3>Enterprise</h3>
+                <h2>$29</h2>
+                <ul>
+                    <li>30 users included</li>
+                    <li>15 GB of storage</li>
+                    <li>Phone and email support</li>
+
+                    <li>Help center access</li>
+                </ul>
+                <button>Contact us</button>
+
+            </div>
+        </div>
+        <h1>Compare Plans</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Free</th>
+                        <th>Pro</th>
+                        <th>Enterprise</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Users Included</th>
+                        <td>10</td>
+                        <td>20</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <th>Storage</th>
+                        <td>2 GB</td>
+                        <td>10 GB</td>
+                        <td>15 GB</td>
+                    </tr>
+                    <tr>
+                        <th>Email Support</th>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <th>Phone Support</th>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                    </tr>
+
+                </tbody>
+
+
+            </table>
+
+    </div>
+    <div class="form-container">
+        <h2>Registration Form</h2>
+
+        <form>
+
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" required minlength="3">
+            </div>
+
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" required>
+            </div>
+
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" required minlength="6">
+            </div>
+
+            <div class="input-group">
+                <label>Phone Number</label>
+                <input type="text" pattern="[0-9]{10}" placeholder="10 digit number" required>
+            </div>
+
+            <div class="input-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <input type="radio" name="gender" required> Male
+                    <input type="radio" name="gender"> Female
+                    <input type="radio" name="gender"> Other
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Skills</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" required> HTML
+                    <input type="checkbox"> CSS
+                    <input type="checkbox"> JavaScript
+                </div>
+            </div>
+
+            <div class="input-group">
+                <input type="checkbox" required> I agree to Terms & Conditions
+            </div>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+    <div class="grid">
+        <h1>Image Gallery</h1>
+
+        <div class="gallery">
+
+            <div class="gallery-item">
+                <img src="https://picsum.photos/id/1015/600/400" alt="">
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://picsum.photos/id/1016/600/400" alt="">
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://picsum.photos/id/1018/600/400" alt="">
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://picsum.photos/id/1020/600/400" alt="">
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://picsum.photos/id/1024/600/400" alt="">
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://picsum.photos/id/1035/600/400" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>2026 All rights reserved.</p>
+    </footer>
+
+    <script>
+        const modal = document.getElementById('search');
+        const openBtn = document.getElementById('search-btn');
+        const closeBtn = document.getElementById('close-btn');
+
+        openBtn.addEventListener('click', function () {
+            modal.classList.add('show-modal');
+        });
+
+        closeBtn.addEventListener('click', function () {
+            modal.classList.remove('show-modal');
+        });
+        const slides = document.querySelector('.slides');
+        const slidesItems = document.querySelectorAll('.slide');
+        const total = slidesItems.length;
+
+        const dashes = document.querySelectorAll('.dash');
+
+        let index = 0;
+        function updateCarousel() {
+            const slideWidth = document.querySelector('.carousel').clientWidth;
+            slides.style.transform = `translateX(${-index * slideWidth}px)`;
+
+
+            dashes.forEach(d => d.classList.remove('active'));
+            dashes[index].classList.add('active');
+        }
+        dashes.forEach((dash, i) => {
+            dash.addEventListener('click', () => {
+                index = i;
+                updateCarousel();
+            });
+        });
+
+        window.addEventListener('resize', updateCarousel);
+    </script>
+</body>
+
+</html>
